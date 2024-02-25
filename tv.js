@@ -250,7 +250,7 @@ fetch("https://www.tdtchannels.com/lists/tv.json", {
     "sec-fetch-mode": "cors",
     "sec-fetch-site": "same-origin"
   },
-  "referrer": "https://www.tdtchannels.com/television/24h",
+  "referrer": "https://www.tdtchannels.com/television",
   "referrerPolicy": "strict-origin-when-cross-origin",
   "body": null,
   "method": "GET",
@@ -270,7 +270,7 @@ fetch("https://www.tdtchannels.com/lists/tv.json", {
       )))
 
       channelsAll.forEach((e,index)=>channelsAll.forEach((f,i)=>{
-          if(e.name===f.name&&!equal(e,f)){
+          if(e.name===f.name&&infoKey[index].name===infoKey[i].name &&!equal(e,f)){
              console.log("Elemento distinto: ",infoKey[index],e,infoKey[i],f) 
                console.log("")
           }
