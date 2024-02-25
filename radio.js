@@ -270,7 +270,7 @@ fetch("https://www.tdtchannels.com/lists/radio.json?1708870507201", {
       )))
 
       channelsAll.forEach((e,index)=>channelsAll.forEach((f,i)=>{
-          if(e.name===f.name&&!equal(e,f)){
+          if(e.name===f.name&&infoKey[index].name===infoKey[i].name &&!equal(e,f)){
              console.log("Elemento distinto: ",infoKey[index],e,infoKey[i],f) 
                console.log("")
           }
