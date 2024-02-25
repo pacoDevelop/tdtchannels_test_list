@@ -239,7 +239,7 @@
 
 })(this);
 
-fetch("https://www.tdtchannels.com/lists/radio.json?1708870507201", {
+fetch("https://www.tdtchannels.com/lists/radio.json", {
   "headers": {
     "accept": "application/json, text/plain, */*",
     "accept-language": "es-ES,es;q=0.9",
